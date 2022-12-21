@@ -31,3 +31,18 @@ PasswordAuthentication no
 ```text
 sudo systemctl restart ssh
 ```
+
+```text
+sudo apt update
+```
+```text
+sudo apt upgrade -y
+```
+
+```text
+sudo reboot
+```
+
+```text
+sudo poweroff
+```
