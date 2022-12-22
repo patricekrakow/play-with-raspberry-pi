@@ -87,3 +87,52 @@ sudo tail -n 20 /var/log/mosquitto/mosquitto.log
 ```text
 ip a
 ```
+
+## Node.js
+
+```text
+uname -m
+```
+
+```text
+wget https://nodejs.org/dist/v18.12.1/node-v18.12.1-linux-armv7l.tar.xz
+```
+
+```text
+VERSION=v18.12.1; echo $VERSION
+```
+
+```text
+DISTRO=linux-armv7l; echo $DISTRO
+```
+
+```text
+sudo mkdir -p /usr/local/lib/nodejs
+```
+
+```text
+sudo tar -xJvf node-$VERSION-$DISTRO.tar.xz -C /usr/local/lib/nodejs 
+```
+
+```text
+nano ~/.profile
+```
+
+```text
+# Nodejs
+VERSION=v18.12.1
+DISTRO=linux-armv7l
+export PATH=/usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin:$PATH
+```
+
+```text
+. ~/.profile
+```
+
+```text
+node -v
+```
+
+```text
+npm version
+```
